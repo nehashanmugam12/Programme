@@ -1,30 +1,24 @@
-# Programme
 #include<stdio.h>
-#include<conio.h>
-int main()
+main()
 {
-	int marks;
-	printf("Enter your marks:");
-	scanf("%d",&marks);
-	if(marks>=85&&marks<=100)
+	printf("Pick a dish : \n1. PIZZA Rs.239 \n2. BURGER Rs.129 \n3. PASTA Rs.179 \n4. FRENCH FRIES Rs. 99 \n5. SANDWICH Rs. 149\n YOUR CHOICE IS ");
+	int pick=0;
+	scanf("%d",&pick);
+	switch(pick)
 	{
-		printf("Grade A");
+		case 1:
+			printf("You picked pizza at the cost of 239");
+			break;
+		case 2:
+			printf("You picked burger at the cost of 129");
+			break;
+		case 3:
+			printf("You picked pasta at the cost of 179");
+            break;
+		case 4:
+		    printf("You have picked french fries at the cost of 99");
+		    break;
+		case 5:
+			printf("You have picked sandwich at the cost of 149");
 	}
-	else if(marks>=70&&marks<=84)
-	{
-		printf("Grade B");
-	}
-	else if(marks>=55&&marks<=69)
-	{
-		printf("Grade C");
-	}
-	else if(marks>=40&&marks<=54)
-	{
-		printf("Grade D");
-	}
-	else if(marks<40)
-	{
-		printf("Grade F");
-	}
-	return 0;
 }
